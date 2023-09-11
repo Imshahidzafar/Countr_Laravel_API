@@ -1,0 +1,165 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn.header-item:hover {
+    color: #50a5f1;
+}
+
+.nav-head-effect {
+    transition-duration: 0.3s;
+}
+
+.nav-head-effect:hover .bx {
+    color: #50a5f1;
+    animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+
+.bg-food-icons {
+    background-image: linear-gradient(rgba(239, 242, 247, 0.95), rgba(239, 242, 247, 0.95)), url('../../assets/images/Updated/fodd-pattern.jpg');
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+@keyframes shake {
+    from {
+        -webkit-transform: rotate(10deg) scale(1.2);
+    }
+
+    to {
+        -webkit-transform-origin: center center;
+        -webkit-transform: rotate(-10deg) scale(1.2);
+    }
+}
+
+.menu-card-bg-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.menu-card-bg-img .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.menu-card-bg-img-vegan::before,
+.menu-card-bg-img-breakfast::before,
+.menu-card-bg-img-pizza::before,
+.menu-card-bg-img-pasta::before,
+.menu-card-sm-bg-pattern::before,
+.menu-card-bg-img-beverages::before {
+
+
+    content: '';
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+}
+
+.menu-card-bg-img-vegan::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/vegan-card-img.jpg');
+}
+
+.menu-card-bg-img-breakfast::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/breakfast-card-menu-img.jpg');
+}
+
+.menu-card-bg-img-beverages::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/beverages-menu-card.jpg');
+}
+
+.menu-card-bg-img-pizza::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/pizza-menu-card.jpg');
+}
+
+.menu-card-bg-img-pasta::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/pasta-menu-card.jpg');
+}
+
+.menu-card-sm-bg-pattern::before {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgb(0 0 0 / 0%)), url('../../assets/images/Updated/sm-pattern.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.menu-card-icon:hover {
+    border-radius: 50%;
+}
+
+.menu-card-icon {
+    transition-duration: 0.3s;
+    border-radius: 12px;
+}
+
+.sliding-effect {
+    overflow: hidden;
+    border: 1px solid transparent;
+    cursor: move;
+}
+
+.sliding-effect,
+.sliding-effect .card-img-top {
+    position: relative;
+    z-index: 2;
+}
+
+.sliding-effect-slide {
+    position: absolute;
+    transition-duration: 0.3s;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    /* padding: 16px 20px 9px; */
+}
+
+.sliding-effect:hover .sliding-effect-slide {
+    top: 55%;
+    z-index: 2;
+    background-color: #ebeefd;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sliding-effect:hover .card-img-top {
+    opacity: 0.8;
+    filter: brightness(0.5);
+}
+
+.card-img-top {
+    transition-duration: 0.3s;
+}
+
+.hover-round {
+    transition-duration: 0.3s;
+}
+
+.hover-round:hover {
+    border-radius: 50%;
+}
+
+.menu-card-sm-bg-pattern {
+    
+}
+
+.menu-card-sm-bg-pattern::before {
+    transition-duration: 0.5s;
+    filter: grayscale(0);
+}
+
+.menu-card-sm-bg-pattern:hover.menu-card-sm-bg-pattern::before {
+    filter: grayscale(2);
+}
+.no-after::after{
+    display: none !important;
+}
